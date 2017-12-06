@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class GridTile : MonoBehaviour {
 
 	public  Image tileImage;
-
+	public RectTransform rTransform;
 	// Use this for initialization
 	void Start () {
+		rTransform = GetComponent<RectTransform> ();
 		tileImage = GetComponent<Image> ();
 	}
 
